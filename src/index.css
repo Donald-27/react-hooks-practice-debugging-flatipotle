@@ -1,5 +1,90 @@
-body {
+/* Base reset and fonts */
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fdf6e3, #ffeaa7);
+  color: #333;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Form containers */
+form {
+  background-color: #fffbea;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 650px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+form:hover {
+  transform: translateY(-2px);
+}
+
+/* Fieldset & legend */
+fieldset {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #8e6e00;
+  margin-bottom: 1rem;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  font-size: 1rem;
+  margin: 0.6rem 0;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.6rem;
+  transform: scale(1.2);
+  accent-color: #f1c40f;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  background-color: #f1c40f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: #d4ac0d;
+}
+
+/* General app layout (if needed) */
+.App {
+  text-align: center;
+}
+
+/* Fancy headers (optional) */
+h1, h2, h3 {
+  color: #7d5a00;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px #fff5cc;
 }
